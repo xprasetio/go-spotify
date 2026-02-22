@@ -1,0 +1,9 @@
+service:
+  port: ":9999"
+
+database:
+  dataSourceName: "postgres://spotify:spotify@localhost:54322/spotify_db?sslmode=disable"
+
+spotifyConfig:
+  clientID: ""
+  clientSecret: ""
