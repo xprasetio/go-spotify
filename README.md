@@ -12,6 +12,7 @@ Golang REST API With gin framework and database postgreSQL
   - [API Response](#api-endpoint)
   - [Sign Up response](#signup-response)
   - [Login response](#login-response)
+  - [Track Search response](#track-search-response)
 - [Credits](#credits)
 - [Copyright](#copyright)
 
@@ -30,7 +31,7 @@ Golang REST API With gin framework and database postgreSQL
 Download this project:
 
 ```shell script
-git clone https://github.com/xprasetio/go-account-recovery.git
+git clone https://github.com/xprasetio/go-spotify.git
 ```
 
 Download project dependencies:
@@ -184,6 +185,14 @@ curl --location 'localhost:9999/memberships/login' \
     "email" : "xprasetio@gmail.com",
     "password" : "admin789"
 }'
+```
+
+#### Track Search response
+
+```shell script
+curl --location 'localhost:9999/tracks/search?query=bohemian&pageSize=10&pageIndex=1' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzE2NzE3MDIsImlkIjoxLCJ1c2VybmFtZSI6ImFkbWluIn0.T3OfikSxtA2kakhMVaeLyBkIm5hAFWVs0u9ZPInDoCw' \
+--data '
 ```
 
 will return:
